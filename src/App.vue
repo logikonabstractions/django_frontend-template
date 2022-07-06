@@ -1,4 +1,5 @@
 <template>
+<!--  sidebar -->
   <sidenav
     v-if="showSideBar"
     :custom_class="cardBackgroundMaskColor"
@@ -8,7 +9,7 @@
     ]"
   />
   <main id="main" class="main-content position-relative max-height-vh-100 h-100 border-radius-lg">
-    <!-- nav -->
+    <!-- topbar -->
     <navbar
       v-if="showNavBar"
       :class="[navClasses]"
