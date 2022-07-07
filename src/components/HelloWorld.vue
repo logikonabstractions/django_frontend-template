@@ -20,6 +20,14 @@ defineProps({
         >Bootstrap 5</a
       >.
     </h3>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
   </div>
 </template>
 
@@ -39,10 +47,10 @@ h3 {
   text-align: center;
 }
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
-}
+/*@media (min-width: 1024px) {*/
+/*  .greetings h1,*/
+/*  .greetings h3 {*/
+/*    text-align: left;*/
+/*  }*/
+/*}*/
 </style>

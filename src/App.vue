@@ -1,41 +1,40 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "@/components/HelloWorld.vue";
+import Sidebar from "@/components/sidebar/Sidebar.vue";
+// import AboutView from "@/views/AboutView.vue";
+// import HomeView from "@/views/HomeView.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+  <div class="container-fluid">
+    <Sidebar />
+    <div id="main" class="mygrid-layout">
+      <div id="mainleft" class="mygrid-layout-sm">
+        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
+        <div>
+          <HelloWorld msg="You did it!" />
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+          </nav>
+        </div>
+      </div>
+      <div class="mainright">
+        <RouterView />
+        <!--        <AboutView/>-->
+        <!--        <HomeView/>-->
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
 <style>
-/*@import '@/assets/base.css';*/
-
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
+  margin: 2rem 2rem;
+  padding: 0 2rem;
   font-weight: normal;
+  width: 100%;
 }
 
 header {
@@ -46,6 +45,7 @@ header {
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  max-width: 15rem;
 }
 
 a,
@@ -86,41 +86,31 @@ nav a:first-of-type {
   border: 0;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
-
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+body {
+  display: flex;
+  place-items: center;
 }
+
+header {
+  display: flex;
+  place-items: center;
+  padding-right: calc(var(--section-gap) / 2);
+}
+
+.mainright {
+  width: 100%;
+}
+.logo {
+  margin: 0 2rem 0 0;
+}
+
+nav {
+  text-align: left;
+  margin-left: -1rem;
+  font-size: 1rem;
+
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+/*}*/
 </style>

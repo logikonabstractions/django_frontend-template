@@ -44,12 +44,13 @@ h3 {
   .item {
     margin-top: 0;
     padding: 0.4rem 0 1rem calc(var(--section-gap) / 2);
+    /*width: 40rem;*/
   }
 
   i {
     top: calc(50% - 25px);
     left: -26px;
-    position: absolute;
+    /*position: absolute;*/
     border: 1px solid var(--color-border);
     background: var(--color-background);
     border-radius: 8px;
@@ -58,7 +59,7 @@ h3 {
   }
 
   .item:before {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
@@ -67,7 +68,7 @@ h3 {
   }
 
   .item:after {
-    content: ' ';
+    content: " ";
     border-left: 1px solid var(--color-border);
     position: absolute;
     left: 0;
