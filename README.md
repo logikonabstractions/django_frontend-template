@@ -1,6 +1,6 @@
 # vue-project
-
-This template should help get you started developing with Vue 3 in Vite.
+* this app is a ground-up template
+* doesn't include any frontend stuff (e.g. creative tim tplt)
 
 ## Recommended IDE Setup
 
