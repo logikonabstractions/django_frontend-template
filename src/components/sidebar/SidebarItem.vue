@@ -2,7 +2,7 @@
   <div class="container-item">
     <a href="#" class="nav-link active">
       <font-awesome-icon icon="fa-brands fa-vuejs" />
-      <span v-if="widebar">{{ title }}</span>
+      <span>{{ title }}</span>
     </a>
   </div>
 </template>
@@ -10,8 +10,7 @@
 <script setup>
 // import { ref } from "vue";
 
-const props = defineProps({ title: String,
-                                  widebar: Boolean});
+const props = defineProps({ title: String});
 // const widebar = ref(true);
 </script>
 
