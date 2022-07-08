@@ -1,116 +1,43 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-import HelloWorld from "@/components/HelloWorld.vue";
-import Sidebar from "@/components/sidebar/Sidebar.vue";
-// import AboutView from "@/views/AboutView.vue";
-// import HomeView from "@/views/HomeView.vue";
+// import { RouterLink, RouterView } from "vue-router";
+import Sidebar from "@/components/sidebar/SidebarContainer.vue";
+import BarView from "@/views/BarView.vue";
+import FooView from "@/views/FooView.vue";
 </script>
 
 <template>
-  <div class="container-fluid">
+  <div class="wrapper">
     <Sidebar />
-    <div id="main" class="mygrid-layout">
-      <div id="mainleft" class="mygrid-layout-sm">
-        <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
-        <div>
-          <HelloWorld msg="You did it!" />
-          <nav>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-          </nav>
-        </div>
-      </div>
-      <div class="mainright">
-        <RouterView />
-        <!--        <AboutView/>-->
-        <!--        <HomeView/>-->
-      </div>
+    <div class="mygrid-layout">
+      <BarView />
+      <FooView />
+      <BarView />
+      <FooView />
+      <BarView />
+      <FooView />
+      <BarView />
+      <FooView />
     </div>
+
+    <!--    <Sidebar/>-->
+    <!--    <router-link :to="{name:'foo'}">Foo</router-link>-->
+    <!--    <router-link :to="{name:'bar'}">Bar</router-link>-->
+    <!--    <RouterView/>-->
   </div>
 </template>
 
 <style>
 #app {
-  margin: 2rem 2rem;
-  padding: 0 2rem;
-  font-weight: normal;
-  width: 100%;
+  padding: inherit;
+  margin: inherit;
+  border: 1px green solid;
 }
 
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-  max-width: 15rem;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-body {
+.wrapper {
+  padding: inherit;
+  margin: inherit;
   display: flex;
-  place-items: center;
+  flex-direction: row;
+  border: 1px teal solid;
 }
-
-header {
-  display: flex;
-  place-items: center;
-  padding-right: calc(var(--section-gap) / 2);
-}
-
-.mainright {
-  width: 100%;
-}
-.logo {
-  margin: 0 2rem 0 0;
-}
-
-nav {
-  text-align: left;
-  margin-left: -1rem;
-  font-size: 1rem;
-
-  padding: 1rem 0;
-  margin-top: 1rem;
-}
-/*}*/
 </style>
