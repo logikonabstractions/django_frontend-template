@@ -1,16 +1,14 @@
 <template>
   <div class="container-item">
-    <a href="#" class="nav-link active">
-      <font-awesome-icon icon="fa-brands fa-vuejs" />
-      <span>{{ title }}-{{ id }}</span>
-    </a>
+    <router-link :to="foo">Foo</router-link>
+    <router-link :to="bar">Bar</router-link>
   </div>
 </template>
 
 <script setup>
 // import { ref } from "vue";
 
-const props = defineProps({ title: String, id: Number });
+const props = defineProps({ routeName: String, id: Number });
 // const widebar = ref(true);
 </script>
 

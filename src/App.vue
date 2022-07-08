@@ -1,28 +1,16 @@
 <script setup>
 // import { RouterLink, RouterView } from "vue-router";
 import Sidebar from "@/components/sidebar/SidebarContainer.vue";
-import BarView from "@/views/BarView.vue";
-import FooView from "@/views/FooView.vue";
+// import BarView from "@/views/BarView.vue";
+// import FooView from "@/views/FooView.vue";
+// import MainContent from "@/components/main_content/MainContent.vue";
+
 </script>
 
 <template>
   <div class="wrapper">
     <Sidebar />
-    <div class="mygrid-layout">
-      <BarView />
-      <FooView />
-      <BarView />
-      <FooView />
-      <BarView />
-      <FooView />
-      <BarView />
-      <FooView />
-    </div>
-
-    <!--    <Sidebar/>-->
-    <!--    <router-link :to="{name:'foo'}">Foo</router-link>-->
-    <!--    <router-link :to="{name:'bar'}">Bar</router-link>-->
-    <!--    <RouterView/>-->
+    <RouterView/>
   </div>
 </template>
 
