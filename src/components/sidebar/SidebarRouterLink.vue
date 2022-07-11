@@ -1,14 +1,13 @@
 <template>
   <div class="container-item">
-    <router-link :to="foo">Foo</router-link>
-    <router-link :to="bar">Bar</router-link>
+    <router-link :to="{ name: routeName }">{{ routeName }}</router-link>
   </div>
 </template>
 
 <script setup>
 // import { ref } from "vue";
 
-const props = defineProps({ routeName: String, id: Number });
+const props = defineProps({ routeName: String });
 // const widebar = ref(true);
 </script>
 

@@ -22,6 +22,7 @@ const actions = {
 
   async LogIn({ commit }, user) {
     await axios.post("login", user);
+    console.log("TODO: actually check creds of user form.... ")
     await commit("setUser", user.get("username"));
   },
 

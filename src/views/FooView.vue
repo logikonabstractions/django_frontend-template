@@ -1,6 +1,6 @@
 <template>
   <div class="outer-component">
-    <h1>Foo</h1>
+    <h1>FooView</h1>
     <h2>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus,
       asperiores, commodi debitis deserunt doloremque est expedita facilis

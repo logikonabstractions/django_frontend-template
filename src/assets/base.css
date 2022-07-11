@@ -35,6 +35,9 @@
   --color-text: var(--vt-c-text-light-1);
 
   --section-gap: 160px;
+
+  --login-grey: #2a2a2a;
+  --login-blue: #1fb5bf
 }
 
 /*@media (prefers-color-scheme: dark) {*/
