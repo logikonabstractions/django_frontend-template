@@ -11,26 +11,13 @@
   <!--end log form -->
 </template>
 
-<script setup></script>
+<script setup>
+
+
+</script>
 
 <style scoped>
-/*@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:400,300,600);*/
 
-/** {*/
-/*  box-sizing: border-box;*/
-/*}*/
-
-/*body {*/
-/*  !*font-family: 'open sans', helvetica, arial, sans;*!*/
-/*  !*background:url(http://farm8.staticflickr.com/7064/6858179818_5d652f531c_h.jpg) no-repeat center center fixed;*!*/
-/*  -webkit-background-size: cover;*/
-/*  -moz-background-size: cover;*/
-/*  -o-background-size: cover;*/
-/*  background-size: cover;*/
-/*}*/
-
-/*@grey:#2a2a2a;*/
-/*var(--login-blue):#1fb5bf;*/
 .log-form {
   width: 40%;
   min-width: 320px;
@@ -86,16 +73,7 @@ input {
   color: white;
   margin-right: 0.5em;
   box-shadow: inset 0px 1px 0px white;
-  /*&:hover {*/
-  /*  background: lighten(var(--login-blue), 5%);*/
-  /*}*/
-  /*&:active {*/
-  /*  background: var(--login-blue);*/
-  /*  box-shadow: inset 0px 1px 1px fadeout(black, 90%);*/
-  /*}*/
-  /*&:focus {*/
-  /*  outline: none;*/
-  /*}*/
+
 }
 
 .forgot {
@@ -108,11 +86,5 @@ input {
   margin: 0;
   padding: 0;
   float: right;
-
-  /*&:hover {*/
-  /*  color: darken(var(--login-blue), 5%);*/
-  /*}*/
-  /*&:active {*/
-  /*}*/
 }
 </style>
