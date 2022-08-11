@@ -4,9 +4,8 @@
     <div class="openid-buttons">
       <div @click="loginWith" class="openid-button" data-provider="google" data-oauthserver="https://accounts.google.com/o/oauth2/auth" data-oauthversion="2.0">
         <svg class="google-svg-icon" width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-          <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
-          <title>btn_google_dark_focus_ios</title>
-          <desc>Created with Sketch.</desc>
+<!--          <title>btn_google_dark_focus_ios</title>-->
+<!--          <desc>Created with Sketch.</desc>-->
           <defs>
             <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
               <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
@@ -63,9 +62,9 @@
 
 <script setup>
 function loginWith(e) {
-  console.log("data-provider: " + e.currentTarget.getAttribute('data-provider'))
-  console.log("data-oauthserver: " + e.currentTarget.getAttribute('data-oauthserver'))
-  console.log("data-oauthversion: " + e.currentTarget.getAttribute('data-oauthversion'))
+  console.groupCollapsed("Auth details")
+  console.table({ "data-provider":e.currentTarget.getAttribute('data-provider') , "data-oauthserver":e.currentTarget.getAttribute('data-oauthserver') , "data-oauthversion":e.currentTarget.getAttribute('data-oauthversion') ,  })
+  console.groupEnd()
 }
 </script>
 
@@ -85,7 +84,7 @@ function loginWith(e) {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  align-items: center;
+  color: var(--vt-c-black);
   border: 1px black solid;
   padding: 0.5rem;
 }
